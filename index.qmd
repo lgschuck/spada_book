@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This is a manual for the spada package.
+
+https://github.com/lgschuck/spada
