@@ -8,5 +8,85 @@
     "crumbs": [
       "Preface"
     ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "1  Data",
+    "section": "",
+    "text": "1.1 Data\nSpada is capable of manage several datasets. The Active Dataset is shown in the sidebar and the navbar.But you can change the active dataset, import new datasets and export datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#data",
+    "href": "data.html#data",
+    "title": "1  Data",
+    "section": "",
+    "text": "1.1.1 Highligths\n\nThis tab shows some descriptive data about the Acctive Dataset.\n\n\n1.1.2 Metadata\n\nIn Metadata one can see tyhe type and class of the variables, as well as some informatios about the data: min and max values, unique, valid, zeros and missing data.\nIt is possible to choose the datasets among the imported ones to show ta metadata. This does no change the Active Dataset.\n\n\n1.1.3 Overview\n\nThe Overview allows the user to see some sample of Data. It is possible to choose the number of rows to show, as well as the position of the data (if first, last or a random sample of rows).\n\n\n1.1.4 Data\n\nIn this tab one can change do:\n\nRename a dataset\nChange the Active Dataset\nCopy a dataset\nDelete a dataset\n\nAs Spada requires at least one active dataset, it is no tpossible to delete the Active one.\n\n\n1.1.5 Import\n\nHere it is possible to import datasets from outside of the Spada package.\nThe formats available are:\n\ncsv: imported via data.table package\nRDS: R native format\nsav: SPSS format imported via haven package\n\n\n\n1.1.6 Export\n\nIt is also possible to save the atsets to a file.\nThe formats available are:\n\ncsv: exported via data.table package\nRDS: R native format\nsav: SPSS format exported via haven package",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "config.html",
+    "href": "config.html",
+    "title": "2  Config",
+    "section": "",
+    "text": "2.1 Config\nMenu Options &gt; Config\nIn Spada yout can choose some configurations that will persist trough RDS files saved in the R_user_dir folder. One file for Session Data and another file for Config.\nThe options available are:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Config</span>"
+    ]
+  },
+  {
+    "objectID": "config.html#config",
+    "href": "config.html#config",
+    "title": "2  Config",
+    "section": "",
+    "text": "Plot colors\n\nLine: color of the line\nFill: fill color of plots\n\nThemes\n\nSpada: default theme\nDark Spada: based on Boosttrap Darkly\n\nSize of inputed files\n\nchoose the size of files to be imported (default 1 GB)\n\nSession\n\nRestore data at startup:\n\nAlways\nNever (default)\n\nSave when exit:\n\nAlways\nAsk (default)\nNever",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Config</span>"
+    ]
+  },
+  {
+    "objectID": "themes.html",
+    "href": "themes.html",
+    "title": "3  Themes",
+    "section": "",
+    "text": "3.1 Themes\nSpada has 2 themes:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Themes</span>"
+    ]
+  },
+  {
+    "objectID": "themes.html#themes",
+    "href": "themes.html#themes",
+    "title": "3  Themes",
+    "section": "",
+    "text": "Spada\nDark Spada\n\n\n3.1.1 Choosing the Theme\nMenu Options &gt; Config\n\nOpen Theme\n\nChoose the desired Theme and Apply. The app will be updated to the choosed theme.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Themes</span>"
+    ]
+  },
+  {
+    "objectID": "docker.html",
+    "href": "docker.html",
+    "title": "4  Docker",
+    "section": "",
+    "text": "4.1 Docker\nThe best way to run Spada is through Docker. As Spada uses specific versions of packages and R itself, the Container ensures that you will have everything you need to run Spada properly.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Docker</span>"
+    ]
+  },
+  {
+    "objectID": "docker.html#docker",
+    "href": "docker.html#docker",
+    "title": "4  Docker",
+    "section": "",
+    "text": "4.1.1 Search Image\nIn the Docker Desktop click in Docker Hub.\n\nSearch for spada.\n\n\n\n4.1.2 Pull Image\nFind the tag you want to download and click Pull image. This will download the image from Docker Hub.\n\nAfter the download is completed the image will appear in Images.\n\nClick in the desired image.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Docker</span>"
+    ]
   }
 ]

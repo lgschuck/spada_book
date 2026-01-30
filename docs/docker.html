@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>References – Spada</title>
+<title>4&nbsp; Docker – Spada</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./docker.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./themes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,7 +81,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./docker.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Docker</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -150,13 +132,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./docker.html" class="sidebar-item-text sidebar-link">
+  <a href="./docker.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Docker</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -165,15 +147,29 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#docker" id="toc-docker" class="nav-link active" data-scroll-target="#docker"><span class="header-section-number">4.1</span> Docker</a>
+  <ul class="collapse">
+  <li><a href="#search-image" id="toc-search-image" class="nav-link" data-scroll-target="#search-image"><span class="header-section-number">4.1.1</span> Search Image</a></li>
+  <li><a href="#pull-image" id="toc-pull-image" class="nav-link" data-scroll-target="#pull-image"><span class="header-section-number">4.1.2</span> Pull Image</a></li>
+  </ul></li>
+  <li><a href="#run" id="toc-run" class="nav-link" data-scroll-target="#run"><span class="header-section-number">5</span> Run</a>
+  <ul class="collapse">
+  <li><a href="#spada" id="toc-spada" class="nav-link" data-scroll-target="#spada"><span class="header-section-number">5.0.1</span> Spada</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Docker</span></h1>
 </div>
 
 
@@ -190,11 +186,48 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" role="list" style="display: none">
+<section id="docker" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="docker"><span class="header-section-number">4.1</span> Docker</h2>
+<p>The best way to run Spada is through Docker. As Spada uses specific versions of packages and R itself, the Container ensures that you will have everything you need to run Spada properly.</p>
+<section id="search-image" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="search-image"><span class="header-section-number">4.1.1</span> Search Image</h3>
+<p>In the <strong>Docker Desktop</strong> click in <strong>Docker Hub</strong>.</p>
+<p><img src="images/articles/docker/docker_hub.png" class="img-fluid"></p>
+<p>Search for spada.</p>
+<p><img src="images/articles/docker/docker_search.png" class="img-fluid"></p>
+</section>
+<section id="pull-image" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="pull-image"><span class="header-section-number">4.1.2</span> Pull Image</h3>
+<p>Find the <strong>tag</strong> you want to download and click <strong>Pull image</strong>. This will download the image from Docker Hub.</p>
+<p><img src="images/articles/docker/docker_image.png" class="img-fluid"></p>
+<p>After the download is completed the image will appear in <strong>Images</strong>.</p>
+<p><img src="images/articles/docker/docker_image_2.png" class="img-fluid"></p>
+<p>Click in the desired image.</p>
+<p><img src="images/articles/docker/docker_image_3.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="run" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Run</h1>
+<p>Click in Run</p>
+<p><img src="images/articles/docker/docker_image_run_1.png" class="img-fluid"></p>
+<p>Open Optional settings.</p>
+<p><img src="images/articles/docker/docker_image_run_2.png" class="img-fluid"></p>
+<p>Insert a Name for the Container and set the <strong>Host Port to 3838</strong>.</p>
+<p><img src="images/articles/docker/docker_image_run_3.png" class="img-fluid"></p>
+<p>Now the Container will be running.</p>
+<p><img src="images/articles/docker/docker_image_run_4.png" class="img-fluid"></p>
+<p>To open it, click in <strong>3838:3838</strong> below the Container name or go in a browser and use the <strong>localhost:3838</strong> address.</p>
+<p><img src="images/articles/docker/docker_image_run_5.png" class="img-fluid"></p>
+<p>Your web browser will open in localhost:3838.</p>
+<p><img src="images/articles/docker/docker_image_run_6.png" class="img-fluid"></p>
+<section id="spada" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="spada"><span class="header-section-number">5.0.1</span> Spada</h3>
+<p><img src="images/articles/docker/docker_spada_loading.png" class="img-fluid"></p>
+<p><img src="images/articles/docker/docker_spada_home_page.png" class="img-fluid"></p>
 
-</div>
 
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -619,11 +652,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./docker.html" class="pagination-link" aria-label="Docker">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Docker</span></span>
+      <a href="./themes.html" class="pagination-link" aria-label="Themes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Themes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

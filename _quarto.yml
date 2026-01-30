@@ -8,7 +8,11 @@ book:
   date: today
   cover-image: cover.png
   chapters:
-    - index.qmd    
+    - index.qmd
+    - data.qmd
+    - config.qmd
+    - themes.qmd
+    - docker.qmd
     - references.qmd
 
 bibliography: references.bib
