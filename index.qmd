@@ -1,5 +1,21 @@
 # Preface {.unnumbered}
 
-This is a manual for the spada package.
+This is a manual for the **spada** package.
 
 https://github.com/lgschuck/spada
+
+The goal of spada is to provide visual tools for Data Analysis in a Shiny App.
+
+This package is inspired in many other tools like:
+
+-   IBM SPSS Statistics (<https://www.ibm.com/products/spss-statistics>)
+
+-   R Commander package (<https://CRAN.R-project.org/package=Rcmdr>)
+
+-   Jamovi (<https://www.jamovi.org/>)
+
+-   ydata profiling (<https://docs.profiling.ydata.ai/latest/>)
+
+## [Live Demo](https://lgschuck.shinyapps.io/spada)
+
+You may try Spada in shinyapps.io [Spada](https://lgschuck.shinyapps.io/spada)

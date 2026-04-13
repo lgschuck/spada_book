@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 book:
-  title: "Spada"
+  title: "Spada Book"
   author: "Luís Gustavo Schuck"
   date: today
   cover-image: cover.png
   chapters:
     - index.qmd
+    - intro.qmd
     - data.qmd
     - config.qmd
     - themes.qmd

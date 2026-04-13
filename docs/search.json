@@ -2,11 +2,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Spada",
+    "title": "Spada Book",
     "section": "",
-    "text": "Preface\nThis is a manual for the spada package.\nhttps://github.com/lgschuck/spada",
+    "text": "Preface\nThis is a manual for the spada package.\nhttps://github.com/lgschuck/spada\nThe goal of spada is to provide visual tools for Data Analysis in a Shiny App.\nThis package is inspired in many other tools like:",
     "crumbs": [
       "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#live-demo",
+    "href": "index.html#live-demo",
+    "title": "Spada Book",
+    "section": "Live Demo",
+    "text": "Live Demo\nYou may try Spada in shinyapps.io Spada",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Datasets\nThe basic object in Spada is a dataset. A dataset is an object of the data.frame class. Internally, for speed and programmability purposes, Spada uses the data.table class from the data.table package.\nSpada demands at least one dataset. If none is provided in the funcion call then Iris and Mtcars, from datasets package, are used as sample data.\nFor multiples datasets as input:",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#datasets",
+    "href": "intro.html#datasets",
+    "title": "Introduction",
+    "section": "",
+    "text": "library(spada)\nspada()\n\nspada(iris, mtcars, cars)\n\nDataset Names\nIf the user desires to give names to datasets, then the Spada function should be called like this:\nspada('dataset' = iris, 'test_data' = mtcars)\nSpada will make valid and unique names with make.names function. So:\nspada('dataset 1' = iris, 'test data' = mtcars, 'dataset 1' = cars)\nWill result in names: dataset.1, test.data and dataset.1.1.\nIf the user inform at least one name, Spada will assume that the datasets should receive a name (instead the name of the original object) and will create valid and unique names using dataset_n, being n a sequencial number:\nspada('dataset 1' = iris, mtcars, cars)\nWill result in names: dataset.1, dataset_2 and dataset_3.\n\n\nActive Dataset\nThe dataset in which the operations will be applied are the Active dataset. One can think of this dataset as the current object. As Spada requires at least one dataset, won’t be possible to delete the Active dataset.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#navbar",
+    "href": "intro.html#navbar",
+    "title": "Introduction",
+    "section": "Navbar",
+    "text": "Navbar\nSpada uses a page_navbar from bslib package. In the left side are the menus that lead to the app pages. In the right side are the Active dataset name.",
+    "crumbs": [
+      "Introduction"
     ]
   },
   {
