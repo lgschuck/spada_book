@@ -197,7 +197,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link active" data-scroll-target="#datasets">Datasets</a>
+  <li><a href="#what-is-spada" id="toc-what-is-spada" class="nav-link active" data-scroll-target="#what-is-spada">What Is Spada?</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a>
   <ul class="collapse">
   <li><a href="#dataset-names" id="toc-dataset-names" class="nav-link" data-scroll-target="#dataset-names">Dataset Names</a></li>
   <li><a href="#active-dataset" id="toc-active-dataset" class="nav-link" data-scroll-target="#active-dataset">Active Dataset</a></li>
@@ -228,12 +229,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="datasets" class="level2">
-<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
-<p>The basic object in Spada is a dataset. A dataset is an object of the data.frame class. Internally, for speed and programmability purposes, Spada uses the data.table class from the <a href="https://rdatatable.gitlab.io/data.table/"><strong>data.table</strong></a> package.</p>
-<p>Spada demands at least one dataset. If none is provided in the funcion call then Iris and Mtcars, from datasets package, are used as sample data.</p>
+<section id="what-is-spada" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-spada">What Is Spada?</h2>
+<p>Spada is a <a href="https://shiny.posit.co/">Shiny</a> web application. In this app you can import files, make data analysis, generate and export outputs (like tables and plots).</p>
+<p>For use Spada one must only call the spada function. This will open the app in the web-browser.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(spada)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">spada</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spada_loading_0.1.3.png" class="img-fluid figure-img"></p>
+<figcaption>Spada Loading Screen</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spada_home.png" class="img-fluid figure-img"></p>
+<figcaption>Spada Initial Page</figcaption>
+</figure>
+</div>
+</section>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
+<p>The basic object in Spada is a dataset. A dataset is an object of the data.frame class. Internally, for speed and programmability purposes, Spada uses the data.table class from the <a href="https://rdatatable.gitlab.io/data.table/">data.table</a> package.</p>
+<p>Spada demands at least one dataset. If none is provided in the funcion call then Iris and Mtcars, from datasets package, are used as sample data.</p>
 <p>For multiples datasets as input:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spada</span>(iris, mtcars, cars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="dataset-names" class="level3">
@@ -249,12 +267,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="active-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="active-dataset">Active Dataset</h3>
-<p>The dataset in which the operations will be applied are the <strong>Active dataset</strong>. One can think of this dataset as the current object. As Spada requires at least one dataset, won’t be possible to delete the Active dataset.</p>
+<p>The dataset in which the operations will be applied are the <strong>Active dataset</strong>. One can think of this dataset as the current object. As Spada requires at least one dataset, it won’t be possible to delete the Active dataset.</p>
 </section>
 </section>
 <section id="navbar" class="level2">
 <h2 class="anchored" data-anchor-id="navbar">Navbar</h2>
-<p>Spada uses a page_navbar from bslib package. In the left side are the menus that lead to the app pages. In the right side are the <strong>Active dataset</strong> name.</p>
+<p>Spada uses a page_navbar from <a href="https://rstudio.github.io/bslib/reference/index.html">bslib</a> package. In the left side are the menus that lead to the app pages. In the right side are the <strong>Active dataset</strong> name.</p>
+<p><img src="images/articles/spada/navbar_active_dataset.png" class="img-fluid"></p>
 
 
 </section>
